@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>index.html</h1>
+    <div class="count">
+      <h1 id="cnt" style="color: rgb(19, 117, 6)">0</h1>
+    </div>
+    <div class="btn">
+      <button id="inc" class="btn" onclick="increment()">Increment</button>
+      <button id="dec" class="btn" onclick="dec()">Decrement</button>
+      <button id="reset" class="btn">Reset</button>
+    </div>
+    <div id="lst">
+      <thead id="tbl">
+        <th id="table-head">Previous Entries</th>
+        <br />
+        <li class="lass">0</li>
+      </thead>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

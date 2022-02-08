@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url("station.jpg");
+    background-size: cover;
+}
+
+div{
+    font-size: 400%;
+    text-align: center;
+    padding: -000;
+    margin: -0;
+    border: -100;
+}
+
+div.lst{
+    font-size: 200%;
+
+}
+
+.btn{
+    padding: 5 25;
+    font-size: xx-large;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    
+}
+
+#inc{
+    background:rgba(243, 199, 2, 0.685);
+
+}
+#dec{
+    background: rgb(252, 0, 0, 0.486);
+}
+#reset{
+    background: rgba(18, 121, 218, 0.486);
+    width: 200px;
+}
