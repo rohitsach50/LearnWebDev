@@ -1,0 +1,15 @@
+#conatiner{
+    position: relative;
+}
+
+#container #root{
+    position: absolute;
+    color: black;
+    top: 0;
+    left: 0;
+    z-index:0;
+}
+
+canvas{
+    border: 1px solid black;
+}
