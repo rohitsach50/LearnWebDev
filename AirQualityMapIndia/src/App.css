@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+.NavBar {
+  display: flex;
+  flex-direction: column;
+  background: #41404d;
+  width: 35%;
+  height: max-content;
+  align-items: left;
+  color: rgb(255, 255, 255);
+  box-shadow: inset -20px 10px 30px #353645;
+}
+.NavBar > div {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.NavBar > p {
+  color: #6b6b73;
+}
+.NavBar > h2 {
+  color: #f3f1f2;
+}
+#map-el {
+  background: #353645;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.map-main-el {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.mapboxgl-canvas-container {
+  box-shadow: inset 10px 10px 50px black;
+}
+.main-body {
+  display: flex;
+}
+.hr {
+  background-color: #545864;
+  width: 60%;
+  height: 1px;
+  border: none;
+  margin-left: 40px;
+}
+
+/* NavBar Color Code Section*/
+.grey-text {
+  color: #bdbdc9;
+}
+.color-unordered-list {
+  padding-left: 24px;
+}
+li.color-li-el {
+  list-style: square;
+}
+li.color-li-el::marker {
+  font-size: 25px;
+}
+li.green-li-el::marker {
+  color: green;
+}
+li.yellow-li-el::marker {
+  color: yellow;
+}
+.red-li-el::marker {
+  color: red;
+}
+.purple-li-el::marker {
+  color: rgb(204, 6, 204);
+}
+.brown-li-el::marker {
+  color: rgb(104, 14, 14);
+}
+.orange-li-el::marker {
+  color: orangered;
+}
+
+/* Input field element */
+#city {
+  width: 50%;
+}
