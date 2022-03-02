@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    
+}
+.nav{
+    background-color: crimson;
+    width: 30vw;
+    height: 100vh;
+    padding-top: 19px;
+    padding-left: 19px;
+}
+.right{
+    display: flex;
+    background-color: rgb(255, 82, 82);
+    width: 70vw;
+    flex-direction: column;
+    height: 102vh;
+}
+.title{
+    height: 20vh;
+    padding-top: 19px;
+    padding-left: 19px;
+}
+.content{
+    height: 60vh;
+    background: yellow;
+    padding-top: 19px;
+    padding-left: 19px;
+}
+.footer{
+    background-color: cornflowerblue;
+    height: 20vh;
+    padding-top: 19px;
+    padding-left: 19px;
+}
