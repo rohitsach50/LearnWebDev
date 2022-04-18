@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    color: rgb(163, 162, 196);
+}
+.wrapper{
+  display: flex;
+  
+
+}
+.map{
+  background-color: #e81d1d;
+  width: 100%;
+  
+}
+.nav{
+    background: rgb(78, 68, 68);
+    height: 100vh;
+    width: 30vw;
+    max-width: 270px;
+    min-width: 221px;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    
+}
+.nav-main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+hr{
+  height: 2px;
+  background: linear-gradient(90deg,#ff2400,#e81d1d,#e8b71d,#e3e81d,#1de840,#1ddde8,#2b1de8,#dd00f3,#dd00f3);
+  
+  border: 0px;
+  background-size: 900% ;
+  width: 190px;
+    margin: 20px;
+    align-self: center;
+    animation: rainbow 10s ease infinite;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+select{
+    margin-top: 8px;
+    color: chartreuse;
+    background-color: black;
+    border: 0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 5px;
+}
+#city{
+  margin-top: 20px;
+}
+/* .row1{
+    background-color: rgba(255, 255, 255, 0.366);
+}
+.row2{
+    background-color: rgba(255, 255, 255, 0.377);    
+}
+.row3{
+    background-color: rgba(255, 255, 255, 0.377);
+} */
+
+.color-unordered-list {
+  padding-left: 45px;
+  line-height: 15px;
+}
+li.color-li-el {
+  list-style: square;
+}
+li.color-li-el::marker {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+li.green-li-el::marker {
+  color: #127369;
+}
+li.yellow-li-el::marker {
+  color: yellow;
+}
+.red-li-el::marker {
+  color: red;
+}
+.purple-li-el::marker {
+  color: rgb(204, 6, 204);
+}
+.brown-li-el::marker {
+  color: rgb(104, 14, 14);
+}
+.orange-li-el::marker {
+  color: orangered;
+}
+.li-el {
+  list-style: none;
+}
+.lower-letters{
+  text-transform: lowercase;
+  margin-left: -3px;
+}
+.c, .o, .l, .r, .d, .e{
+  display: inline-block;
+  transition: all .3s;
+  transition-timing-function: cubic-bezier(.165, 0.84, 0.44,2);
+  text-shadow: 5px 5px 7px rgb(0, 0, 0);
+  
+}
+.c:hover{
+  color: rgb(255, 2, 2);
+  transform: scale(2);
+}
+.o:hover{
+  color: rgb(67, 220, 20);
+  transform: scale(2);
+}
+.l:hover{
+  color: rgb(17, 0, 255);
+  transform: scale(2);
+}
+.r:hover{
+  color: rgb(17, 0, 255);
+  transform: scale(2) ;
+}
+.d:hover{
+  color: rgb(255, 0, 0);
+  transform: scale(2) ;
+}
+.e:hover{
+  color: rgb(17, 0, 252);
+  transform: scale(2) ;
+}
+
+@keyframes rainbow{
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
