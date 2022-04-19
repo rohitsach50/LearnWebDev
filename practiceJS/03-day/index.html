@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variable accessing Using Js</title>
+</head>
+<body>
+    <div class="text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsam nulla optio dolorum odio necessitatibus non praesentium, nostrum ab, laudantium aliquid provident <span class="colorText">alias accusantium fugiat explicabo cum similique atque</span>, sint totam ex repellendus! Facere aliquam mollitia magnam.</p></div>
+    <div class="container">
+        <h2>spacing</h2>
+        <input type="range" name="spacing" id="spacing" max="100" min="0" data-suffix="px" value="10px">
+        <h2>blur</h2>
+        <input type="range" name="blur" id="blur" max="30" min="0" data-suffix="px" value="10px">
+        <h2>base color</h2>
+        <input type="color" name="base" id="base" value="#ff00cc">
+    </div>
+    <div class="image">image</div>
+</body>
+<style>
+    html{
+        font-size: 10px;
+        text-transform: capitalize;
+    }
+    body{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        font-size: 1.5rem;
+        /* justify-content: center; */
+        /* align-content: center; */
+    }
+    :root{
+        --base:#ff00cc;
+        --spacing:10px;
+        --blur:10px;
+    }
+    .container{
+        position: absolute;
+        left: 10rem;
+        display: flex;
+    }
+    .colorText{
+        color: var(--base);
+    }
+.image{
+    position: fixed;
+    left: 30rem;
+    top: 20rem;
+    width: 30rem;
+    height: 30rem;
+    background-color: black;
+    /* border-color: var(--base); */
+    border: var(--spacing) solid var(--base);
+    filter: blur(var(--blur));
+}
+
+</style>
+<script>
+    const inputs=document.querySelectorAll('.container input')
+    
+    function handleChange() {
+        const suffix=this.dataset.suffix || ''
+        document.documentElement.style.setProperty(`--${this.name}`,this.value+suffix)
+    }
+
+
+    inputs.forEach(input=>input.addEventListener('mousemove',handleChange))
+    inputs.forEach(input=>input.addEventListener('change',handleChange))
+</script>
+</html>
