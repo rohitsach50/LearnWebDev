@@ -51,8 +51,8 @@
         /* background-size: cover; */
         /* background-position: center; */
         justify-content: center;
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
       }
       .panel1 {
         background-color: rgb(93, 93, 158);
@@ -70,11 +70,18 @@
       .panel5 {
         background-color: rgb(251, 101, 0);
       }
-      .panel > *:first-child { transform: translateY(-100%); }
-    .panel.open-active > *:first-child { transform: translateY(0); }
-    .panel > *:last-child { transform: translateY(100%); }
-    .panel.open-active > *:last-child { transform: translateY(0); }
-
+      .panel > *:first-child {
+        transform: translateY(-100%);
+      }
+      .panel.open-active > *:first-child {
+        transform: translateY(0);
+      }
+      .panel > *:last-child {
+        transform: translateY(100%);
+      }
+      .panel.open-active > *:last-child {
+        transform: translateY(0);
+      }
 
       /* Flex Children */
       .panel > * {
@@ -86,8 +93,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-      
+      }
 
       .panel p {
         text-transform: uppercase;
@@ -106,7 +112,7 @@
     </style>
 
     <div class="panels">
-      <div class="panel  panel1">
+      <div class="panel panel1">
         <p>Hey</p>
         <p>Let's</p>
         <p>Dance</p>
@@ -134,25 +140,23 @@
     </div>
 
     <script>
-      const panels = Array.from(document.querySelectorAll('.panel'))
+      const panels = Array.from(document.querySelectorAll(".panel"));
       function addClass() {
-        this.classList.toggle('open')
-        this.classList.toggle('open-active')
+        this.classList.toggle("open");
+        this.classList.toggle("open-active");
         console.log(this);
       }
-      // to remove classes on mouse moving out of div use below code
-      
+      // to remove classes on mouse moving out of div use below function
+
       // function removeClass() {
       //   this.classList.remove('open')
       //   this.classList.remove('open-active')
       //   // console.log("hello");
       // }
-      panels.forEach(panel => {
-        panel.addEventListener('click',addClass)
+      panels.forEach((panel) => {
+        panel.addEventListener("click", addClass);
         // panel.addEventListener('mouseout',removeClass)
       });
-
-
     </script>
   </body>
 </html>
